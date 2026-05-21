@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef, useCallback } from "react";
+import Metronome from "./Metronome.jsx";
 
 const NOTE_NAMES = [
   "C",
@@ -443,6 +444,9 @@ export default function MidiPiano() {
       >
         {showLabels ? "Hide note names" : "Show note names"}
       </button>
+
+      {/* Metronome */}
+      <Metronome />
 
       {/* Velocity bar */}
       <div
